@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+if(!process.env.REACT_APP_SECRET_KEY){
+  throw Error("Please setup the environment first! and Check the ReadMe file.");
+}
 
 ReactDOM.render(
   <React.StrictMode>
